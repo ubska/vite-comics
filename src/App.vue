@@ -10,7 +10,7 @@ export default {
     AppContent,
     AppProducts,
     AppFooter,
-  }
+  },
 }
 </script>
 
