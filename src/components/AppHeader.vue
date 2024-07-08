@@ -79,13 +79,14 @@ export default {
                         </li>
                     </ul>
                 </div>
-            </div>
+        </div>
     </header>
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins' as *;
+@use '../styles/partials/variables' as *;
+
 
 header{
     text-align: center;
@@ -93,7 +94,16 @@ header{
     ul{
         list-style: none;
         margin: 2.5rem 1rem 4rem;
-        @include center{};
+        @include center('both');
+        gap: 2%;
+    }
+    a {
+        text-decoration: none;
+    }
+  
+    .container{
+        @include center('both');
+        justify-content: space-between;
     }
 }
 </style>
