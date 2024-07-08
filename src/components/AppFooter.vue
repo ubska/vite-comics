@@ -44,7 +44,8 @@ export default {
 <template>
     <footer>
         <div class="container">
-            <div class="left column">
+            <!-- colonna di sinistra -->
+            <div class="column">
                 <h3>DC Comics</h3>
                 <ul>
                     <li v-for="comic in comics"><a href="#">{{ comic }}</a></li>
@@ -55,19 +56,25 @@ export default {
                     <li v-for="shop in shop"><a href="#">{{ shop }}</a></li>
                 </ul>
             </div>
-            <div class="center column">
+            <!-- colonna centrale -->
+            <div class="column">
                 <h3>DC</h3>
                 <ul>
                     <li v-for="dc in dc"><a href="#">{{ dc }}</a></li>
                 </ul>
             </div>
-            <div class="right column">
+            <!-- colonna di destra -->
+            <div class="column">
                 <h3>Sites</h3>
                 <ul>
                     <li v-for="site in sites"><a href="#">{{ site }}</a></li>
                 </ul>
             </div>
+            <div class="column">
+                <img src="../assets/dc-logo-bg.png" alt="logo-dc">
+            </div>
         </div>
+        
     </footer>
 </template>
 
@@ -100,6 +107,7 @@ footer{
 
                     a {
                         color: rgb(172, 167, 167);
+                        text-decoration: none;
                     }
                 }
 
