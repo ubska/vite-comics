@@ -80,6 +80,8 @@ export default {
                     </ul>
                 </div>
         </div>
+        <div id="jumbotron">
+        </div>
     </header>
 </template>
 
@@ -105,5 +107,12 @@ header{
         @include center('both');
         justify-content: space-between;
     }
+
+  #jumbotron {
+    background-image: url(../assets/jumbotron.jpg);
+    background-size: cover;
+    height: 25rem;
+    width: 100%;
+}
 }
 </style>
