@@ -74,7 +74,19 @@ export default {
                 <img src="../assets/dc-logo-bg.png" alt="logo-dc">
             </div>
         </div>
-        
+        <div class="ft-bottom">
+            <div class="container">
+                <a href="#">Sing Up</a>
+                <div class="social">
+                    <img src="../assets/footer-facebook.png" alt="logo-facebook">
+                    <img src="../assets/footer-twitter.png" alt="logo-twitter">
+                    <img src="../assets/footer-youtube.png" alt="logo-youtube">
+                    <img src="../assets/footer-pinterest.png" alt="logo-pinterest">
+                    <img src="../assets/footer-periscope.png" alt="logo-periscope">
+                </div>
+            </div>
+            
+        </div>
     </footer>
 </template>
 
@@ -93,6 +105,11 @@ footer{
         .column {
             margin-right: 1.25rem;
 
+            img{
+                position: relative;
+                top: 20px;
+                object-fit: cover;
+            }
             h3 {
                 color: white;
                 text-transform: uppercase;
@@ -116,4 +133,25 @@ footer{
         }
     }
 }
+.ft-bottom{
+    width: 100%;
+    background-color: rgb(44, 43, 43);
+    height: 100px;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    a{
+        
+        border: 1px solid blue;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        font-size: inherit;
+        padding: .625rem;
+    }
+}
+
+
 </style>
